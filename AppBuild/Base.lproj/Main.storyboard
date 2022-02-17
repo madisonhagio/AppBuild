@@ -50,6 +50,29 @@
                                     <action selector="secondButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="wvH-Ji-ean"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8bO-ju-oKe">
+                                <rect key="frame" x="154" y="162" width="85" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Calculate"/>
+                                <connections>
+                                    <action selector="calculateButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Ep3-h3-pkX"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="The Answer Is" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ccu-P4-nVA">
+                                <rect key="frame" x="99" y="96" width="107" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="No Text" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ijt-hj-xOa">
+                                <rect key="frame" x="259" y="74" width="59" height="43"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="fpo-tm-bNz">
                                 <rect key="frame" x="87" y="336" width="240" height="250"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -65,10 +88,12 @@
                     </view>
                     <tabBarItem key="tabBarItem" title="Item" id="uLz-M5-4yp"/>
                     <connections>
+                        <outlet property="answerLabel" destination="ccu-P4-nVA" id="BkQ-cg-QQZ"/>
                         <outlet property="firstLabel" destination="Lp3-v7-R4n" id="0Fc-6w-H5M"/>
                         <outlet property="firstText" destination="fpo-tm-bNz" id="M4W-Ed-ieS"/>
                         <outlet property="label" destination="fpo-tm-bNz" id="AFQ-cK-chI"/>
                         <outlet property="secondLabel" destination="fpo-tm-bNz" id="ykc-fT-Zym"/>
+                        <outlet property="textLabel" destination="Ijt-hj-xOa" id="C0p-o2-kh2"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
